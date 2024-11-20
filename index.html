@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b51777f750.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Sreejit</span> <br> Sarkar From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I’m Sreejit Sarkar, a passionate Computer Science and Technology student at the University
+                        of Engineering & Management, Kolkata. With a solid foundation in programming languages like
+                        Java, HTML, CSS, and JavaScript, I enjoy crafting efficient and innovative solutions to
+                        technical challenges.
+
+                        My journey in web development has been enriched by hands-on projects like TextUtils, a text
+                        analysis tool, and Redstore, a sleek front-end e-commerce website. I also gained industry
+                        experience during my Web Development Internship at Prodigy InfoTech, where I honed my technical
+                        and collaborative skills.
+
+                        Beyond academics, I am an enthusiastic football player, having competed in prestigious
+                        tournaments like CFL and the All India University Games. When I'm not coding or on the field, I
+                        enjoy traveling, dancing, and fishing.
+
+                        I am driven by a passion for learning and creating impactful digital experiences, aiming to grow
+                        as a developer and problem-solver.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Java, HTML, CSS, JavaScript</li>
+                            <li><span>Web Development</span><br>Front-End Development <br> Back-End Development</li>
+                            <li><span>Framework</span><br>React Js</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2025 July - August</span><br>Web-Development Internship at Prodigy InfoTech</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2009 - 2021</span><br>Central Modern School</li>
+                            <li><span>2021 - 2025 (Current)</span><br>B.Tech from University Of Engineering &
+                                Management, Kolkata</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------services--------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Full-Stack Development</h2>
+                    <p>Designing and developing complete applications with seamless integration of front-end and
+                        back-end technologies. <br> Front-End Development - Creating responsive and interactive websites
+                        using HTML, CSS, JavaScript and React JS <br> Back-End Development - Developing RESTful APIs and
+                        backend systems using Java and JavaScript.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Implementation</h2>
+                    <p>Enhancing user experience with attractive and functional design. Crafting visually appealing and
+                        user-friendly interfaces that adapt seamlessly to devices of all sizes. Implementing dynamic
+                        user interactions such as animations, transitions and hover effects to enhance engagement.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>API Integration</h2>
+                    <p>Integrating third-party APIs into applications. Building RESTful APIs for seamless communication
+                        between front-end & back-end systems</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------portfolio--------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>News App</h3>
+                        <p>NewsNest is a dynamic and interactive web application that allows users to explore the latest
+                            news from around the world. Leveraging a third-party News API, the platform categorizes news
+                            content by topics and regions, providing users with an intuitive and seamless browsing
+                            experience.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Text Analyzing App</h3>
+                        <p>TextUtils is a web application designed for analyzing and manipulating text. It provides
+                            users with a variety of tools to streamline text editing and enhance productivity. The
+                            platform is simple, intuitive, and suitable for tasks like content formatting, analysis, and
+                            conversion.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Redstore is a fully responsive front-end e-commerce platform designed to provide users with a
+                            seamless online shopping experience. The website features a clean and modern UI, showcasing
+                            a variety of products with an intuitive layout for easy navigation.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -----------contact--------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> sreejitriki@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 7044257003 / 9038497088</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/sreejit.sarkar.146/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/Sreejit2003?tab=repositories"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/sreejit_sarkar23/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sreejit-sarkar-297567238/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Sreejit. Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyoT9X5gQ45c5ouPZKVPHAoiZ0jTiBuLd9-1fofZ2SjtMJKdZTkOEyiMxP-JDGahQkA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
